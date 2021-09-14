@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <form action="/editmaestro" method="POST">
+        <label for="">Nombre del Maestro</label>
+        <input type="text" name="nombre" value="{{user.nombre}}">
+        <label for="">Estado</label>
+        <input type="text" name="estado" value="{{user.estado}}">
+        <input type="hidden" name="id" value="{{user.id}}">
+        <button type="submit">
+            Enviar
+        </button>
+    </form>
+</body>
+</html>
